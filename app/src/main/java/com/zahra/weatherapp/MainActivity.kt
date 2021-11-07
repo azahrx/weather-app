@@ -24,12 +24,31 @@ class MainActivity : AppCompatActivity() {
 
         weatherTask().execute()
 
-        val btn = findViewById<Button>(R.id.btn)
+        val btn = findViewById<Button>(R.id.forecastButton)
 
         btn.setOnClickListener{
             val intent = Intent(this,ForecastActivity::class.java)
             startActivity(intent)
         }
+
+//        var listViewForecast = findViewById<ListView>(R.id.listViewForecast)
+//        var list = mutableListOf<ModelList>()
+//
+//        list.add(ModelList("Day One", "Average Temperature", "Condition"))
+//        list.add(ModelList("Day Two", "Average Temperature", "Condition"))
+//        list.add(ModelList("Day Three", "Average Temperature", "Condition"))
+//
+//        listViewForecast.setOnItemClickListener { parent, view, position, id ->
+//            if (position == 0){
+//                Toast.makeText(this, "day 1", Toast.LENGTH_LONG).show()
+//            }
+//            if (position == 1){
+//                Toast.makeText(this, "day 2", Toast.LENGTH_LONG).show()
+//            }
+//            if (position == 2){
+//                Toast.makeText(this, "day 3", Toast.LENGTH_LONG).show()
+//            }
+//        }
 
 //        val listView = findViewById<ListView>(R.id.listView)
 //        val names = arrayOf("Tomorrow", "Next 2 days", "Next 3 days")
@@ -37,9 +56,8 @@ class MainActivity : AppCompatActivity() {
 //        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
 //            this, android.R.layout.simple_list_item_1, names
 //        )
-//
 //        listView.adapter = arrayAdapter
-
+//
 //        listView.setOnItemClickListener{ adapterView, view, i, l ->
 //            Toast.makeText(this, "Forecast "+ names[i],Toast.LENGTH_LONG)
 //                .show()
