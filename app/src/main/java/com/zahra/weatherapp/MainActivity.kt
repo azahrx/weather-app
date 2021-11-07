@@ -1,5 +1,6 @@
 package com.zahra.weatherapp
 
+import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,23 +24,31 @@ class MainActivity : AppCompatActivity() {
 
         weatherTask().execute()
 
-        val listView = findViewById<ListView>(R.id.listView)
-        val names = arrayOf("Tomorrow", "Next 2 days", "Next 3 days")
+        val btn = findViewById<Button>(R.id.btn)
 
-        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
-            this, android.R.layout.simple_list_item_1, names
-        )
-
-        listView.adapter = arrayAdapter
-
-        listView.setOnItemClickListener{ adapterView, view, i, l ->
-            Toast.makeText(this, "Forecast "+ names[i],Toast.LENGTH_LONG)
-                .show()
+        btn.setOnClickListener{
+            val intent = Intent(this,ForecastActivity::class.java)
+            startActivity(intent)
         }
+
+//        val listView = findViewById<ListView>(R.id.listView)
+//        val names = arrayOf("Tomorrow", "Next 2 days", "Next 3 days")
+//
+//        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
+//            this, android.R.layout.simple_list_item_1, names
+//        )
+//
+//        listView.adapter = arrayAdapter
+
+//        listView.setOnItemClickListener{ adapterView, view, i, l ->
+//            Toast.makeText(this, "Forecast "+ names[i],Toast.LENGTH_LONG)
+//                .show()
+//        }
+
     }
 
 
-    inner class weatherTask() : AsyncTask<String, Void, String>()
+    public final inner class weatherTask() : AsyncTask<String, Void, String>()
     {
         override fun onPreExecute() {
             super.onPreExecute()
