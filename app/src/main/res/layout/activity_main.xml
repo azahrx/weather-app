@@ -16,7 +16,6 @@
         android:layout_height="match_parent"
         android:visibility="visible">
 
-
         <LinearLayout
             android:id="@+id/addressContainer"
             android:layout_width="match_parent"
@@ -38,27 +37,18 @@
                 android:text="Updated at"
                 android:textSize="14sp"></TextView>
 
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="match_parent"-->
-            <!--                android:orientation="horizontal">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <!--                <com.google.android.material.tabs.TabLayout-->
-            <!--                    android:id="@+id/tablayout"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    app:tabIndicatorColor="@color/white"-->
-            <!--                    app:tabTextAppearance="@style/TabLayoutTextStyle"-->
-            <!--                    app:tabTextColor="@color/white" />-->
+                <ListView
+                    android:id="@+id/listView"
+                    android:paddingTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                </ListView>
 
-            <!--                <androidx.viewpager.widget.ViewPager-->
-            <!--                    android:id="@+id/viewPager"-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="0dp"-->
-            <!--                    android:layout_weight="1"-->
-            <!--                    android:background="@color/black" />-->
-
-            <!--            </LinearLayout>-->
+            </LinearLayout>
 
         </LinearLayout>
 

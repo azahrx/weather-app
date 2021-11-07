@@ -23,30 +23,21 @@ class MainActivity : AppCompatActivity() {
 
         weatherTask().execute()
 
-//        var viewPager = findViewById(R.id.viewPager) as ViewPager
-//        var tablayout = findViewById(R.id.tablayout) as TabLayout
-//
-//        val fragmentAdapter = FragmentAdapter(supportFragmentManager)
-//        fragmentAdapter.addFragment(Home(),"Home")
-//        fragmentAdapter.addFragment(Forecast(),"Forecast")
-//
-//        viewPager.adapter = fragmentAdapter
-//        tablayout.setupWithViewPager(viewPager)
+        val listView = findViewById<ListView>(R.id.listView)
+        val names = arrayOf("Tomorrow", "Next 2 days", "Next 3 days")
+
+        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
+            this, android.R.layout.simple_list_item_1, names
+        )
+
+        listView.adapter = arrayAdapter
+
+        listView.setOnItemClickListener{ adapterView, view, i, l ->
+            Toast.makeText(this, "Forecast "+ names[i],Toast.LENGTH_LONG)
+                .show()
+        }
     }
-//        val listView = findViewById<ListView>(R.id.listView)
-//        val names = arrayOf("Tomorrow", "Next 2 days", "Next 3 days")
-//
-//        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
-//            this, android.R.layout.simple_list_item_1, names
-//        )
-//
-//        listView.adapter = arrayAdapter
-//
-//        listView.setOnItemClickListener{ adapterView, view, i, l ->
-//            Toast.makeText(this, "Forecast "+ names[i],Toast.LENGTH_LONG)
-//                .show()
-//        }
-//    }
+
 
     inner class weatherTask() : AsyncTask<String, Void, String>()
     {
