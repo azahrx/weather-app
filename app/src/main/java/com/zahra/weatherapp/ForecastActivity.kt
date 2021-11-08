@@ -11,6 +11,10 @@ import org.json.JSONObject
 import java.net.URL
 
 class ForecastActivity : AppCompatActivity() {
+
+    val CITY : String = "Jakarta, ID"
+    val API : String = "de2770d9b7c34d428e9100243213110"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forecast)
@@ -40,7 +44,7 @@ class ForecastActivity : AppCompatActivity() {
 //        override fun onPreExecute() {
 //            super.onPreExecute()
 //            findViewById<ProgressBar>(R.id.loader).visibility = View.VISIBLE
-//            findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
+//            findViewById<RelativeLayout>(R.id.mainForContainer).visibility = View.VISIBLE
 //            findViewById<TextView>(R.id.errorText).visibility = View.VISIBLE
 //        }
 //
