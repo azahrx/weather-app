@@ -10,7 +10,7 @@
     tools:context=".DetailActivity">
 
     <RelativeLayout
-        android:id="@+id/mainContainer"
+        android:id="@+id/detContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
@@ -30,11 +30,11 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/updated_at"
+                android:id="@+id/updatedatdet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Updated at"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -127,7 +127,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/averTemp"
+                    android:id="@+id/averTemp1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -161,7 +161,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/totalprecip"
+                    android:id="@+id/totalprecip1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -207,7 +207,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/temp_max"
+                    android:id="@+id/temp_max1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -242,7 +242,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/maxwindsp"
+                    android:id="@+id/maxwind1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -276,7 +276,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/dayweather"
+                    android:id="@+id/dayweather1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -340,7 +340,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/temp_min"
+                    android:id="@+id/temp_min2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -375,7 +375,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/averTemp"
+                    android:id="@+id/averTemp2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -409,7 +409,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/totalprecip"
+                    android:id="@+id/totalprecip2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -454,7 +454,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/temp_max"
+                    android:id="@+id/temp_max2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -489,7 +489,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/maxwindsp"
+                    android:id="@+id/maxwind2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -523,7 +523,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/dayweather"
+                    android:id="@+id/dayweather2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -587,7 +587,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/temp_min"
+                    android:id="@+id/temp_min3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -622,7 +622,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/averTemp"
+                    android:id="@+id/averTemp3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -656,7 +656,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/totalprecip"
+                    android:id="@+id/totalprecip3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -701,7 +701,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/temp_max"
+                    android:id="@+id/temp_max3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -736,7 +736,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/maxwindsp"
+                    android:id="@+id/maxwind3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -770,7 +770,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/dayweather"
+                    android:id="@+id/dayweather3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -783,7 +783,7 @@
     </RelativeLayout>
 
     <ProgressBar
-        android:id="@+id/loader"
+        android:id="@+id/loaderDet"
         android:layout_centerInParent="true"
         android:visibility="gone"
         android:layout_width="wrap_content"
@@ -791,7 +791,7 @@
     </ProgressBar>
 
     <TextView
-        android:id="@+id/errorText"
+        android:id="@+id/errorDetText"
         android:layout_centerInParent="true"
         android:text="Something went wrong."
         android:visibility="gone"
