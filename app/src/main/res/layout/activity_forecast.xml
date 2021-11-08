@@ -30,7 +30,7 @@
                 android:textSize="24sp"/>
 
             <TextView
-                android:id="@+id/updated_at"
+                android:id="@+id/updatedat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Updated at"
@@ -56,13 +56,6 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <TextView
-                            android:id="@+id/day1text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Day 1"
-                            android:textSize="30sp"></TextView>
-
                         <Button
                             android:id="@+id/day1Button"
                             android:layout_width="wrap_content"
@@ -71,6 +64,14 @@
                             android:backgroundTint="@color/black"
                             android:text="See Forecast" />
 
+                        <TextView
+                            android:id="@+id/day1text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 1"
+                            android:textSize="30sp" />
+
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -78,19 +79,18 @@
                             android:padding="8dp">
 
                             <TextView
-                                android:id="@+id/avgT"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Average Temperature"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp" />
 
                             <TextView
-                                android:id="@+id/avgtemp1"
+                                android:id="@+id/avgTemp1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="right"
                                 android:text="0"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -103,7 +103,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Condition"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp" />
 
                             <TextView
                                 android:id="@+id/condition1"
@@ -111,12 +111,12 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="right"
                                 android:text="0"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <Space android:layout_width="wrap_content"
-                        android:layout_height="20dp"></Space>
+                        android:layout_height="20dp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -125,10 +125,11 @@
                         android:padding="8dp">
 
                         <TextView
+                            android:id="@+id/day2text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Day 2"
-                            android:textSize="30sp"></TextView>
+                            android:textSize="30sp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -137,19 +138,18 @@
                             android:padding="8dp">
 
                             <TextView
-                                android:id="@+id/avgTemp2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Average Temperature"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp"/>
 
                             <TextView
-                                android:id="@+id/avgtemp2"
+                                android:id="@+id/avgTemp2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="right"
                                 android:text="0"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -162,7 +162,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Condition"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp"/>
 
                             <TextView
                                 android:id="@+id/condition2"
@@ -170,12 +170,12 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="right"
                                 android:text="0"
-                                android:textSize="20sp"></TextView>
+                                android:textSize="20sp"/>
                         </LinearLayout>
                     </LinearLayout>
 
                     <Space android:layout_width="wrap_content"
-                        android:layout_height="20dp"></Space>
+                        android:layout_height="20dp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -184,6 +184,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/day3text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Day 3"
@@ -202,7 +203,7 @@
                                 android:textSize="20sp">
                             </TextView>
                             <TextView
-                                android:id="@+id/avgtemp3"
+                                android:id="@+id/avgTemp3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="right"
@@ -243,7 +244,7 @@
     </RelativeLayout>
 
     <ProgressBar
-        android:id="@+id/loader"
+        android:id="@+id/loaderFor"
         android:layout_centerInParent="true"
         android:visibility="gone"
         android:layout_width="wrap_content"
@@ -251,7 +252,7 @@
     </ProgressBar>
 
     <TextView
-        android:id="@+id/errorText"
+        android:id="@+id/errorForText"
         android:layout_centerInParent="true"
         android:text="Something went wrong."
         android:visibility="gone"

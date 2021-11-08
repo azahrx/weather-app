@@ -56,10 +56,6 @@ class DetailActivity : AppCompatActivity() {
                 val tempMin = day.getString("mintemp_c")+"°C"
                 val tempMax = day.getString("maxtemp_c")+"°C"
 
-//                var listview = findViewById<ListView>(R.id.listView)
-//                var list = mutableListOf<Model>()
-//                list.add(Model("Day 1", "Average Temp", avgTemp, "Condition", "Patchy rain"))
-
                 findViewById<TextView>(R.id.updated_at).text = updatedAtText
                 findViewById<TextView>(R.id.temp_min1).text = tempMin
                 findViewById<TextView>(R.id.aircondition).text = airCond

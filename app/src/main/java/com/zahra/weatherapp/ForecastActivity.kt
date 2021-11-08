@@ -50,9 +50,9 @@ class ForecastActivity : AppCompatActivity() {
     {
         override fun onPreExecute() {
             super.onPreExecute()
-            findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
+            findViewById<ProgressBar>(R.id.loaderFor).visibility = View.GONE
             findViewById<RelativeLayout>(R.id.mainForContainer).visibility = View.VISIBLE
-            findViewById<TextView>(R.id.errorText).visibility = View.VISIBLE
+            findViewById<TextView>(R.id.errorForText).visibility = View.VISIBLE
         }
 
         override fun doInBackground(vararg p0: String?): String? {
@@ -76,29 +76,41 @@ class ForecastActivity : AppCompatActivity() {
                 val condition = current.getJSONObject("condition")
                 val location = jsonObj.getJSONObject("location")
                 val forecast = jsonObj.getJSONObject("forecast").getJSONArray("forecastday").getJSONObject(0)
+                val forecastTwo = jsonObj.getJSONObject("forecast").getJSONArray("forecastday").getJSONObject(1)
+                val forecastThree = jsonObj.getJSONObject("forecast").getJSONArray("forecastday").getJSONObject(2)
                 val day = forecast.getJSONObject("day")
-                val conditionForecast = day.getJSONObject("condition")
+                val dayTwo = forecastTwo.getJSONObject("day")
+                val dayThree = forecastThree.getJSONObject("day")
+                val conditionOne = day.getJSONObject("condition").getString("text")
+                val conditionTwo = dayTwo.getJSONObject("condition").getString("text")
+                val conditionThree = dayThree.getJSONObject("condition").getString("text")
                 val avgTemp = day.getString("avgtemp_c")
-                val airCond = conditionForecast.getString("text")
+                val avgTempTwo = dayTwo.getString("avgtemp_c")
+                val avgTempThree = dayThree.getString("avgtemp_c")
+                val dateOne = forecast.getString("date")
+                val dateTwo = forecastTwo.getString("date")
+                val dateThree = forecastThree.getString("date")
                 val updatedAtText = "Updated at "+current.getString("last_updated")
 
-//                var listview = findViewById<ListView>(R.id.listView)
-//                var list = mutableListOf<Model>()
-//                list.add(Model("Day 1", "Average Temp", avgTemp, "Condition", "Patchy rain"))
+                findViewById<TextView>(R.id.updatedat).text = updatedAtText
+                findViewById<TextView>(R.id.day1text).text = dateOne
+                findViewById<TextView>(R.id.day2text).text = dateTwo
+                findViewById<TextView>(R.id.day3text).text = dateThree
+                findViewById<TextView>(R.id.avgTemp1).text = avgTemp
+                findViewById<TextView>(R.id.avgTemp2).text = avgTempTwo
+                findViewById<TextView>(R.id.avgTemp3).text = avgTempThree
+                findViewById<TextView>(R.id.condition1).text = conditionOne
+                findViewById<TextView>(R.id.condition2).text = conditionTwo
+                findViewById<TextView>(R.id.condition3).text = conditionThree
 
-                findViewById<TextView>(R.id.updated_at).text = updatedAtText
-                findViewById<TextView>(R.id.avgtemp).text = avgTemp
-                findViewById<TextView>(R.id.avgtemp).text = avgTemp
-                findViewById<TextView>(R.id.aircondition).text = airCond
-
-                findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
-                findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
-                findViewById<TextView>(R.id.errorText).visibility = View.GONE
+                findViewById<ProgressBar>(R.id.loaderFor).visibility = View.GONE
+                findViewById<RelativeLayout>(R.id.mainForContainer).visibility = View.VISIBLE
+                findViewById<TextView>(R.id.errorForText).visibility = View.GONE
             }
             catch (e: Exception)
             {
-                findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
-                findViewById<TextView>(R.id.errorText).visibility = View.VISIBLE
+                findViewById<ProgressBar>(R.id.loaderFor).visibility = View.GONE
+                findViewById<TextView>(R.id.errorForText).visibility = View.VISIBLE
             }
         }
     }
