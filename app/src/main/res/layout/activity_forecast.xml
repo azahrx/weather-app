@@ -16,25 +16,19 @@
         android:visibility="visible">
 
         <LinearLayout
-            android:id="@+id/addressContainer"
+            android:id="@+id/forecastContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/address"
+                android:id="@+id/forecastTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/updated_at"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Updated at"
-                android:textSize="14sp" />
+                android:text="Weather Forecast"
+                android:textSize="24sp"
+                android:paddingBottom="15dp"/>
 
             <ListView
                 android:id="@+id/listView"
@@ -45,24 +39,6 @@
             </ListView>
 
         </LinearLayout>
-
-<!--        <com.google.android.material.tabs.TabLayout-->
-<!--            android:id="@+id/tab_layout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/addressContainer">-->
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Home" />-->
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Forecast" />-->
-
-<!--        </com.google.android.material.tabs.TabLayout>-->
 
     </RelativeLayout>
 

@@ -1,5 +1,6 @@
 package com.zahra.weatherapp
 
+import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,8 +15,12 @@ class ForecastActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forecast)
 
-//
 //        weatherForecast().execute()
+
+//        val actionBar = supportActionBar
+//        actionBar!!.title = "Forecast"
+//        actionBar.setDisplayHomeAsUpEnabled(true)
+
         var listview = findViewById<ListView>(R.id.listView)
         var list = mutableListOf<Model>()
         listview.adapter = Adapter(this, R.layout.item_list, list)
@@ -25,15 +30,8 @@ class ForecastActivity : AppCompatActivity() {
         list.add(Model("Day 3", "Average Temp", "5.4", "Condition", "Patchy rain"))
 
         listview.setOnItemClickListener { parent: AdapterView<*>, view:View, position:Int, id:Long ->
-            if (position == 0) {
-                Toast.makeText(this, "Test 1", Toast.LENGTH_LONG).show()
-            }
-            if (position == 1) {
-                Toast.makeText(this, "Test 2", Toast.LENGTH_LONG).show()
-            }
-            if (position == 2) {
-                Toast.makeText(this, "Test 3", Toast.LENGTH_LONG).show()
-            }
+            val intent = Intent(this,DetailActivity::class.java)
+            startActivity(intent)
         }
     }
 
