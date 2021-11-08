@@ -29,6 +29,13 @@
                 android:text="Detail Forecast"
                 android:textSize="24sp" />
 
+            <TextView
+                android:id="@+id/updated_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Updated at"
+                android:textSize="14sp"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -85,7 +92,7 @@
                     android:textSize="12sp" />
 
                 <TextView
-                    android:id="@id/temp_min"
+                    android:id="@+id/temp_min1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5:30 AM"
@@ -774,5 +781,22 @@
         </LinearLayout>
 
     </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_centerInParent="true"
+        android:text="Something went wrong."
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
 
 </RelativeLayout>

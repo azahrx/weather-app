@@ -27,27 +27,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Location"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/updated_at"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Updated at"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4DFFFFFF"
+                android:padding="5dp"
+                android:orientation="horizontal">
 
-<!--                <ListView-->
-<!--                    android:id="@+id/listView"-->
-<!--                    android:paddingTop="20dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_width="wrap_content">-->
-<!--                </ListView>-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#55FFFFFF"
+                    app:endIconMode="clear_text">
 
-<!--            </LinearLayout>-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_city_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:hint="City Name"
+                        android:lines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/img_search_city"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
