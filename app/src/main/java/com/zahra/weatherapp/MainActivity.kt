@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    public final inner class weatherTask() : AsyncTask<String, Void, String>()
+    inner class weatherTask() : AsyncTask<String, Void, String>()
     {
         override fun onPreExecute() {
             super.onPreExecute()
@@ -74,14 +74,6 @@ class MainActivity : AppCompatActivity() {
             findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
             findViewById<TextView>(R.id.errorText).visibility = View.VISIBLE
         }
-//
-//        override fun listView {
-//            val values = arrayListOf("Item One", "Item Two", "Item Three")
-//            val mListView = findViewById<ListView>(R.id.listView)
-//            val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values)
-//            mListView.adapter = adapter
-//            mListView.setOnItemClickListener(adapterView, view, i, 1 ->)
-//        }
 
         override fun doInBackground(vararg p0: String?): String? {
             var response:String?
