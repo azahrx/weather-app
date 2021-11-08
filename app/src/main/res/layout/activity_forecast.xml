@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:backgroundTint="@color/black"
-                        android:text="See Forecast" />
+                        android:text="See Forecast Detail" />
 
                     <LinearLayout
                         android:id="@+id/day1container"

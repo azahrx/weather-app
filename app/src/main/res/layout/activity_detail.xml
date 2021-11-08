@@ -78,7 +78,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/humidity"
+                    android:src="@drawable/sunset"
                     app:tint="#FFFF" />
 
                 <Space
@@ -113,7 +113,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/pressure"
                     app:tint="#FFFF" />
 
                 <Space
@@ -147,7 +147,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/humidity"
                     app:tint="#FFFF" />
 
                 <Space
@@ -193,7 +193,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/humidity"
+                    android:src="@drawable/sunrise"
                     app:tint="#FFFF" />
 
                 <Space
@@ -262,7 +262,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/info"
                     app:tint="#FFFF" />
 
                 <Space
@@ -326,7 +326,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/humidity"
+                    android:src="@drawable/sunset"
                     app:tint="#FFFF" />
 
                 <Space
@@ -361,7 +361,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/pressure"
                     app:tint="#FFFF" />
 
                 <Space
@@ -395,7 +395,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/humidity"
                     app:tint="#FFFF" />
 
                 <Space
@@ -440,7 +440,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/humidity"
+                    android:src="@drawable/sunrise"
                     app:tint="#FFFF" />
 
                 <Space
@@ -509,7 +509,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/info"
                     app:tint="#FFFF" />
 
                 <Space
@@ -573,7 +573,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/humidity"
+                    android:src="@drawable/sunset"
                     app:tint="#FFFF" />
 
                 <Space
@@ -608,7 +608,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/pressure"
                     app:tint="#FFFF" />
 
                 <Space
@@ -642,7 +642,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/humidity"
                     app:tint="#FFFF" />
 
                 <Space
@@ -687,7 +687,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/humidity"
+                    android:src="@drawable/sunrise"
                     app:tint="#FFFF" />
 
                 <Space
@@ -756,7 +756,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/wind"
+                    android:src="@drawable/info"
                     app:tint="#FFFF" />
 
                 <Space
