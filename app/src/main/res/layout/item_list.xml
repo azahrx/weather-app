@@ -22,13 +22,13 @@
         android:textColor="@color/white"
         android:text="Average Temperature" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/avgtemp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginRight="10dp"-->
-<!--        android:text="5.4"-->
-<!--        android:textSize="20sp" />-->
+    <TextView
+        android:id="@+id/avgtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="5.4"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,12 +38,12 @@
         android:textColor="@color/white"
         android:text="Condition" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/aircondition"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginRight="10dp"-->
-<!--        android:text="Rain"-->
-<!--        android:textSize="20sp" />-->
+    <TextView
+        android:id="@+id/aircondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Rain"
+        android:textSize="20sp" />
 
 </LinearLayout>

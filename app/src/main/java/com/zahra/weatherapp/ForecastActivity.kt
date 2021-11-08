@@ -20,19 +20,19 @@ class ForecastActivity : AppCompatActivity() {
         var list = mutableListOf<Model>()
         listview.adapter = Adapter(this, R.layout.item_list, list)
 
-        list.add(Model("Day 1", "Average Temp", "Condition"))
-        list.add(Model("Day 2", "Average Temp", "Condition"))
-        list.add(Model("Day 3", "Average Temp", "Condition"))
+        list.add(Model("Day 1", "Average Temp", "5.4", "Condition", "Patchy rain"))
+        list.add(Model("Day 2", "Average Temp", "5.4", "Condition", "Patchy rain"))
+        list.add(Model("Day 3", "Average Temp", "5.4", "Condition", "Patchy rain"))
 
         listview.setOnItemClickListener { parent: AdapterView<*>, view:View, position:Int, id:Long ->
             if (position == 0) {
                 Toast.makeText(this, "Test 1", Toast.LENGTH_LONG).show()
             }
             if (position == 1) {
-                Toast.makeText(this, "Test 1", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Test 2", Toast.LENGTH_LONG).show()
             }
             if (position == 2) {
-                Toast.makeText(this, "Test 1", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Test 3", Toast.LENGTH_LONG).show()
             }
         }
     }
