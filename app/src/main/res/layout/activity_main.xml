@@ -55,7 +55,6 @@
                         android:id="@+id/edt_city_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
                         android:inputType="text"
                         android:maxLines="1"
                         android:hint="City Name"
@@ -100,26 +99,77 @@
                 android:textSize="90sp"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/temp_min"
+                    android:id="@+id/hourone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Min. Temp" />
+                    android:text="Hour One" />
 
                 <Space
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:id="@+id/temp_max"
+                    android:id="@+id/hourtwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Max. Temp" />
+                    android:text="Hour Two" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hourthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hour One" />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/hourfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hour Two" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hourfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hour One" />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/hoursix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hour Two" />
 
             </LinearLayout>
 
@@ -202,10 +252,10 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="25dp"
+                        android:layout_width="21dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/wind"
-                        app:tint="#FFFF"/>
+                        android:src="@drawable/pressure"
+                        app:tint="#FFFF" />
 
                     <Space
                         android:layout_width="5dp"
@@ -365,7 +415,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/wind"
+                        android:src="@drawable/info"
                         app:tint="#FFFF"/>
 
                     <Space
